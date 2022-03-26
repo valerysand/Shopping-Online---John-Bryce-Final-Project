@@ -1,0 +1,28 @@
+div {
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 13% 82% 5%;
+}
+
+div, div > * {
+    border: 1px solid black;
+}
+
+header, footer {
+    grid-column: span 6;
+    background-color: lightblue;
+}
+
+main {
+    grid-column: span 4;
+    overflow: auto;
+    background-color: #fff;
+}
+
+aside {
+    grid-column: span 2;
+    width: 100%;
+    background-color: lightblue;
+}
